@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>Certifications</h1>
+  <p>Professional credentials validating expertise in IS audit, cybersecurity, and information security management</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-3">
+      {{ range .Pages.ByDate.Reverse }}
+      <div class="cert-card">
+        {{ with .Params.badge }}
+        <img src="{{ . | relURL }}" alt="{{ $.Title }} Badge" class="cert-icon" style="object-fit: contain; background: none; border-radius: 0;">
+        {{ else }}
+        <div class="cert-icon">🏆</div>
+        {{ end }}
+        <div class="cert-info">
+          <h3>{{ .Title }}</h3>
+          <p class="issuer">{{ .Params.issuer }}</p>
+          <p class="date">{{ .Params.cert_date }}</p>
+          <p>{{ .Params.description }}</p>
+          {{ with .Params.verification_url }}
+          <a href="{{ . }}" class="cert-link" target="_blank" rel="noopener">Verify Credential →</a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,41 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="{{ "/" | relURL }}" class="nav-brand">
+      <img src="{{ "assets/img/logo.png" | relURL }}" alt="Mahfuj Hasan Logo" class="monogram" style="width: 36px; height: 36px; object-fit: contain; border-radius: 8px;">
+      <span>Mahfuj Hasan</span>
+    </a>
+    <div class="overflow-menu">
+      <button class="overflow-menu-btn" aria-label="Open menu">☰</button>
+      <div class="overflow-dropdown">
+        <a href="{{ "/" | relURL }}">Home</a>
+        <a href="{{ "/about/" | relURL }}">About</a>
+        <a href="{{ "/experience/" | relURL }}">Experience</a>
+        <a href="{{ "/skills/" | relURL }}">Skills</a>
+        <a href="{{ "/education/" | relURL }}">Education</a>
+        <a href="{{ "/certifications/" | relURL }}">Certifications</a>
+        <a href="{{ "/projects/" | relURL }}">Projects</a>
+        <a href="{{ "/achievements/" | relURL }}">Achievements</a>
+        <a href="{{ "/articles/" | relURL }}">Articles</a>
+        <a href="{{ "/contact/" | relURL }}">Contact</a>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-nav">
+  <ul class="mobile-nav-links">
+    <li><a href="{{ "/" | relURL }}">Home</a></li>
+    <li><a href="{{ "/about/" | relURL }}">About</a></li>
+    <li><a href="{{ "/experience/" | relURL }}">Experience</a></li>
+    <li><a href="{{ "/skills/" | relURL }}">Skills</a></li>
+    <li><a href="{{ "/education/" | relURL }}">Education</a></li>
+    <li><a href="{{ "/certifications/" | relURL }}">Certifications</a></li>
+    <li><a href="{{ "/projects/" | relURL }}">Projects</a></li>
+    <li><a href="{{ "/achievements/" | relURL }}">Achievements</a></li>
+    <li><a href="{{ "/articles/" | relURL }}">Articles</a></li>
+    <li><a href="{{ "/contact/" | relURL }}">Contact</a></li>
+  </ul>
+</div>

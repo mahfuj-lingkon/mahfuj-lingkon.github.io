@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>Experience</h1>
+  <p>Chronological career journey in IS Audit, Cybersecurity, and Technology Risk</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="timeline">
+      {{ range .Pages.ByDate.Reverse }}
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>{{ .Title }}</h3>
+          <p class="org">{{ .Params.organization }}{{ with .Params.location }}, {{ . }}{{ end }}</p>
+          <p class="date">{{ .Params.start_date }} – {{ .Params.end_date }}</p>
+          <p>{{ .Params.overview }}</p>
+          {{ with .Params.responsibilities }}
+          <ul style="margin-top: 12px; padding-left: 20px; color: var(--text-light);">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

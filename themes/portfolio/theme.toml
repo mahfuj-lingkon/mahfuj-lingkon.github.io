@@ -1,0 +1,12 @@
+name = 'Portfolio'
+license = 'MIT'
+licenselink = 'https://github.com/mahfuj-lingkon/portfolio/blob/main/LICENSE'
+description = 'Professional portfolio theme for Md. Mahfuj Hasan'
+homepage = 'https://mahfuj-lingkon.github.io'
+tags = ['portfolio', 'resume', 'blog']
+features = ['responsive', 'dark-mode', 'cms']
+min_version = '0.167.0'
+
+[author]
+  name = 'Md. Mahfuj Hasan'
+  homepage = 'https://mahfuj-lingkon.github.io'

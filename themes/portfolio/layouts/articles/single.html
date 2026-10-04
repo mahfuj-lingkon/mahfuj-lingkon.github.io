@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    {{ with .Params.image }}
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="article-featured-image" style="margin-bottom: 32px;">
+    {{ end }}
+    <article style="color: var(--text-light); line-height: 1.8;">
+      {{ .Content }}
+    </article>
+
+    <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);">
+      <a href="{{ "/articles/" | relURL }}" class="btn btn-secondary">← Back to Articles</a>
+    </div>
+  </div>
+</section>
+{{ end }}

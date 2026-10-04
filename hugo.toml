@@ -1,0 +1,62 @@
+baseURL = 'https://mahfuj-lingkon.github.io/'
+locale = 'en-us'
+title = 'Md. Mahfuj Hasan — Information Systems Auditor'
+theme = 'portfolio'
+
+[params]
+  description = "Professional portfolio of Md. Mahfuj Hasan, Information Systems Auditor specializing in technology risk, cybersecurity, and AI."
+  author = "Md. Mahfuj Hasan"
+  email = "mahfujhasanlingkon@gmail.com"
+  linkedin = "https://www.linkedin.com/in/mahfuj-hasan/"
+  github = "https://github.com/mahfuj-lingkon"
+  whatsapp = "https://wa.me/8801703598815"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Experience"
+    url = "/experience/"
+    weight = 3
+  [[menu.main]]
+    name = "Skills"
+    url = "/skills/"
+    weight = 4
+  [[menu.main]]
+    name = "Education"
+    url = "/education/"
+    weight = 5
+  [[menu.main]]
+    name = "Certifications"
+    url = "/certifications/"
+    weight = 6
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 7
+  [[menu.main]]
+    name = "Achievements"
+    url = "/achievements/"
+    weight = 8
+  [[menu.main]]
+    name = "Articles"
+    url = "/articles/"
+    weight = 9
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 10

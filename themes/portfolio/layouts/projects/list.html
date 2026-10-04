@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>Projects & Portfolio</h1>
+  <p>Selected projects showcasing technical skills and professional contributions</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2">
+      {{ range .Pages.ByDate.Reverse }}
+      <div class="project-card">
+        {{ with .Params.image }}
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="project-image" style="object-fit: cover;">
+        {{ else }}
+        <div class="project-image">📋</div>
+        {{ end }}
+        <div class="project-body">
+          <h3>{{ .Title }}</h3>
+          <div class="tech">
+            {{ range .Params.technologies }}<span>{{ . }}</span>{{ end }}
+          </div>
+          <p>{{ .Params.overview }}</p>
+          {{ with .Params.role }}<p><strong>Role:</strong> {{ . }}</p>{{ end }}
+          {{ with .Params.features }}
+          <p><strong>Features:</strong> {{ range . }}{{ . }} · {{ end }}</p>
+          {{ end }}
+          {{ with .Params.github_url }}
+          <a href="{{ . }}" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

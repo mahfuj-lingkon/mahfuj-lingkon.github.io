@@ -1,0 +1,123 @@
+backend:
+  name: github
+  repo: mahfuj-lingkon/mahfuj-lingkon.github.io
+  branch: main
+  base_url: https://mahfuj-lingkon.github.io
+
+media_folder: "static/assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "certifications"
+    label: "Certifications"
+    folder: "content/certifications"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Issuer", name: "issuer", widget: "string"}
+      - {label: "Date", name: "date", widget: "string"}
+      - {label: "Credential ID", name: "credential_id", widget: "string", required: false}
+      - {label: "Verification URL", name: "verification_url", widget: "string", required: false}
+      - {label: "Badge Image", name: "badge", widget: "image", required: false}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Status", name: "status", widget: "select", options: ["active", "expired"], default: "active"}
+
+  - name: "education"
+    label: "Education"
+    folder: "content/education"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Degree", name: "degree", widget: "string"}
+      - {label: "Institution", name: "institution", widget: "string"}
+      - {label: "Field of Study", name: "field", widget: "string", required: false}
+      - {label: "Start Date", name: "start_date", widget: "string"}
+      - {label: "End Date", name: "end_date", widget: "string"}
+      - {label: "GPA", name: "gpa", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
+
+  - name: "experience"
+    label: "Experience"
+    folder: "content/experience"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Job Title", name: "title", widget: "string"}
+      - {label: "Organization", name: "organization", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Start Date", name: "start_date", widget: "string"}
+      - {label: "End Date", name: "end_date", widget: "string"}
+      - {label: "Overview", name: "overview", widget: "text"}
+      - label: "Responsibilities"
+        name: "responsibilities"
+        widget: "list"
+        fields:
+          - {label: "Item", name: "item", widget: "string"}
+      - label: "Achievements"
+        name: "achievements"
+        widget: "list"
+        fields:
+          - {label: "Item", name: "item", widget: "string"}
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Overview", name: "overview", widget: "text"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Approach", name: "approach", widget: "text", required: false}
+      - label: "Technologies"
+        name: "technologies"
+        widget: "list"
+        fields:
+          - {label: "Tech", name: "tech", widget: "string"}
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        fields:
+          - {label: "Feature", name: "feature", widget: "string"}
+      - {label: "Outcome", name: "outcome", widget: "text", required: false}
+      - {label: "Lessons", name: "lessons", widget: "text", required: false}
+      - {label: "Project Image", name: "image", widget: "image", required: false}
+      - {label: "GitHub URL", name: "github_url", widget: "string", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+
+  - name: "achievements"
+    label: "Achievements"
+    folder: "content/achievements"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+
+  - name: "training"
+    label: "Training"
+    folder: "content/training"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Provider", name: "provider", widget: "string"}
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Image", name: "image", widget: "image", required: false}

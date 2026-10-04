@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }} — {{ .Site.Title }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end }}
+<link rel="stylesheet" href="{{ "assets/css/style.css" | relURL }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Md. Mahfuj Hasan",
+  "jobTitle": "Information Systems Auditor",
+  "url": "https://mahfuj-lingkon.github.io",
+  "sameAs": [
+    "https://www.linkedin.com/in/mahfuj-hasan",
+    "https://github.com/mahfuj-lingkon"
+  ]
+}
+</script>

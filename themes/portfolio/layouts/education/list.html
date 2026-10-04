@@ -1,0 +1,55 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>Education & Training</h1>
+  <p>Academic background and professional development</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Education</h2>
+      <p>Academic qualifications</p>
+    </div>
+    <div class="timeline">
+      {{ range .Pages.ByDate.Reverse }}
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>{{ .Params.degree }}</h3>
+          <p class="org">{{ .Params.institution }}</p>
+          <p class="date">{{ .Params.start_date }} – {{ .Params.end_date }}</p>
+          {{ with .Params.field }}<p>{{ . }}</p>{{ end }}
+          {{ with .Params.gpa }}<p><strong>GPA:</strong> {{ . }}</p>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <h2>Training & Courses</h2>
+      <p>Professional training and selected courses</p>
+    </div>
+    <div class="timeline">
+      {{ $training := .Site.GetPage "training" }}
+      {{ range $training.Pages.ByDate.Reverse }}
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>{{ .Title }}</h3>
+          <p class="org">{{ .Params.provider }}</p>
+          <p class="date">{{ .Params.year }}</p>
+          <p>{{ .Params.description }}</p>
+          {{ with .Params.image }}
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="training-image">
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
