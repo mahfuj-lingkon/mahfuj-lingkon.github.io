@@ -7,8 +7,16 @@
       return;
     }
     var hash = window.location.hash;
-    if (hash && hash.indexOf("invite_token=") !== -1) {
-      window.netlifyIdentity.open();
+    var hasInviteToken = hash && hash.indexOf("invite_token=") !== -1;
+    if (hasInviteToken) {
+      window.netlifyIdentity.on("invite", function() {
+        window.netlifyIdentity.open();
+      });
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.open();
+        }
+      });
       return;
     }
     window.netlifyIdentity.on("init", function(user) {
