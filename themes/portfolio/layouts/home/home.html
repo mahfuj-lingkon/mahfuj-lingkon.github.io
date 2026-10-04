@@ -1,22 +1,25 @@
 {{ define "main" }}
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   function initIdentity() {
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
+    if (!window.netlifyIdentity) {
+      setTimeout(initIdentity, 50);
+      return;
     }
+    var hash = window.location.hash;
+    if (hash && hash.indexOf("invite_token=") !== -1) {
+      window.netlifyIdentity.open();
+      return;
+    }
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
   }
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initIdentity);
-  } else {
-    initIdentity();
-  }
+  initIdentity();
 </script>
 <!-- Hero Section -->
 <section class="hero">
