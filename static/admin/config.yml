@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: mahfuj-lingkon/mahfuj-lingkon.github.io
+  name: git-gateway
   branch: main
-  base_url: https://mahfuj-lingkon.github.io
 
 media_folder: "static/assets/img"
 public_folder: "/assets/img"
