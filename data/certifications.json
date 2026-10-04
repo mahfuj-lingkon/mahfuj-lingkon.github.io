@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Certified Information Systems Auditor (CISA)",
+    "issuer": "ISACA",
+    "date": "Feb 2025",
+    "credential_id": "2500000000",
+    "verification_url": "https://www.isaca.org/credentialing/cisa",
+    "description": "The gold standard certification for IS audit professionals, validating expertise in auditing, controlling, and securing information systems.",
+    "status": "active"
+  },
+  {
+    "name": "ISO/IEC 27001 Lead Auditor",
+    "issuer": "PECB",
+    "date": "Jan 2025",
+    "credential_id": "ISO27001-LA-2025-0000",
+    "verification_url": "https://pecb.com",
+    "description": "Certification demonstrating competence in auditing information security management systems against ISO/IEC 27001 standards.",
+    "status": "active"
+  },
+  {
+    "name": "Certified Ethical Hacker (CEH)",
+    "issuer": "EC-Council",
+    "date": "May 2021",
+    "credential_id": "ECC0000000000",
+    "verification_url": "https://as.eccouncil.org/verify",
+    "description": "Certification validating skills in ethical hacking, penetration testing, and offensive security methodologies.",
+    "status": "active"
+  }
+]

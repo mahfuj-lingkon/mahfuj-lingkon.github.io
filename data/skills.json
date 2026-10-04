@@ -1,0 +1,58 @@
+[
+  {
+    "category": "IT Audit & Assurance",
+    "skills": [
+      { "name": "IS Audit Planning & Execution", "description": "End-to-end audit engagement planning, fieldwork, and reporting" },
+      { "name": "IT General Controls (ITGC)", "description": "Access management, change management, operations controls" },
+      { "name": "Application Controls", "description": "Input, processing, and output control assessment" },
+      { "name": "Audit Methodology", "description": "Risk-based audit approaches and sampling techniques" },
+      { "name": "Regulatory Compliance", "description": "Bangladesh Bank, Basel, and local regulatory requirements" }
+    ]
+  },
+  {
+    "category": "Technology Risk & Governance",
+    "skills": [
+      { "name": "IT Governance Frameworks", "description": "COBIT, ITIL, and ISO 27001 governance structures" },
+      { "name": "Risk Assessment", "description": "Technology risk identification, analysis, and evaluation" },
+      { "name": "Policy Development", "description": "IT policy, standard, and procedure development" },
+      { "name": "Third-Party Risk", "description": "Vendor and outsourced service risk management" }
+    ]
+  },
+  {
+    "category": "Cybersecurity",
+    "skills": [
+      { "name": "Vulnerability Assessment & Penetration Testing", "description": "Network, web application, and infrastructure VAPT" },
+      { "name": "Threat Detection & Incident Response", "description": "SIEM, EDR, and incident handling" },
+      { "name": "Malware Analysis & Forensics", "description": "Static/dynamic analysis and digital forensics" },
+      { "name": "Network Security", "description": "Firewall, IDS/IPS, and network segmentation" },
+      { "name": "Access Control", "description": "Identity management, RBAC, and privileged access" }
+    ]
+  },
+  {
+    "category": "Banking Technology",
+    "skills": [
+      { "name": "Core Banking Systems", "description": "Assessment of core banking platform controls" },
+      { "name": "Digital Banking Security", "description": "Online and mobile banking control assessment" },
+      { "name": "Payment Systems", "description": "Payment gateway and card processing controls" },
+      { "name": "SWIFT & Messaging", "description": "SWIFT infrastructure and message security" }
+    ]
+  },
+  {
+    "category": "AI & Automation",
+    "skills": [
+      { "name": "Security Automation", "description": "SOAR, scripting, and automated security workflows" },
+      { "name": "AI in Audit", "description": "Data analytics and AI-assisted audit techniques" },
+      { "name": "Process Automation", "description": "Workflow automation for audit and security operations" }
+    ]
+  },
+  {
+    "category": "Tools & Technologies",
+    "skills": [
+      { "name": "Security Tools", "description": "Nmap, Burp Suite, Metasploit, Wireshark, Nessus" },
+      { "name": "SIEM & Monitoring", "description": "Splunk, ELK Stack, QRadar" },
+      { "name": "Programming & Scripting", "description": "Python, Bash, PowerShell, SQL" },
+      { "name": "Cloud Platforms", "description": "AWS, Azure, GCP security fundamentals" },
+      { "name": "Audit Tools", "description": "ACL, IDEA, TeamMate" }
+    ]
+  }
+]

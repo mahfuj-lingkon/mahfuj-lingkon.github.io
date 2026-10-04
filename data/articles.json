@@ -1,0 +1,23 @@
+[
+  {
+    "title": "The Role of IS Auditors in the Age of AI",
+    "slug": "role-of-is-auditors-in-age-of-ai",
+    "date": "2025-09-15",
+    "excerpt": "Exploring how artificial intelligence is transforming the IS audit profession and what auditors need to adapt.",
+    "featured": true
+  },
+  {
+    "title": "Key Considerations for Banking IT General Controls",
+    "slug": "banking-itgc-considerations",
+    "date": "2025-08-01",
+    "excerpt": "A practical guide to evaluating IT general controls in banking environments.",
+    "featured": false
+  },
+  {
+    "title": "Getting Started with Cybersecurity Auditing",
+    "slug": "getting-started-cybersecurity-auditing",
+    "date": "2025-06-20",
+    "excerpt": "Essential knowledge and skills for auditors entering the cybersecurity domain.",
+    "featured": false
+  }
+]
