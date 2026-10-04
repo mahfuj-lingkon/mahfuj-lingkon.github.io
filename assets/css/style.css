@@ -380,6 +380,15 @@ main {
   width: 320px;
   height: 320px;
   border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--bg);
+}
+
+.hero-image .portrait-placeholder {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
   background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
   display: flex;
   align-items: center;
@@ -919,6 +928,33 @@ main {
 .not-found p {
   color: var(--text-light);
   margin-bottom: 32px;
+}
+
+/* ============ Article Featured Image ============ */
+.article-featured-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+}
+
+/* ============ About Portrait ============ */
+.about-portrait {
+  width: 100%;
+  max-width: 320px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 24px;
+}
+
+/* ============ Training Image ============ */
+.training-image {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  margin-top: 16px;
 }
 
 /* ============ Responsive ============ */
