@@ -127,7 +127,7 @@ img {
 }
 
 .nav-links {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 4px;
   list-style: none;

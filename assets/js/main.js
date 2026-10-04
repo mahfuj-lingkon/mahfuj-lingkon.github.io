@@ -45,8 +45,36 @@
   }, { passive: true });
 })();
 
-// Mobile menu toggle
+// Overflow menu toggle
 (function() {
+  const overflowBtn = document.querySelector('.overflow-menu-btn');
+  const overflowDropdown = document.querySelector('.overflow-dropdown');
+  
+  if (overflowBtn && overflowDropdown) {
+    overflowBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      overflowDropdown.classList.toggle('open');
+      overflowBtn.textContent = overflowDropdown.classList.contains('open') ? '✕' : '☰';
+    });
+    
+    // Close menu when a link is clicked
+    overflowDropdown.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        overflowDropdown.classList.remove('open');
+        overflowBtn.textContent = '☰';
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!overflowDropdown.contains(e.target) && !overflowBtn.contains(e.target)) {
+        overflowDropdown.classList.remove('open');
+        overflowBtn.textContent = '☰';
+      }
+    });
+  }
+  
+  // Mobile menu toggle (for mobile view)
   const menuToggle = document.querySelector('.menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav');
   
@@ -56,7 +84,6 @@
       menuToggle.textContent = mobileNav.classList.contains('open') ? '✕' : '☰';
     });
     
-    // Close menu when a link is clicked
     mobileNav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileNav.classList.remove('open');
