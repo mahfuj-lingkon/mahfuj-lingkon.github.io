@@ -433,6 +433,14 @@ main {
   font-weight: 700;
 }
 
+/* ============ Credential Badge Images ============ */
+.credential-badge-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 /* ============ Cards & Grids ============ */
 .grid {
   display: grid;
