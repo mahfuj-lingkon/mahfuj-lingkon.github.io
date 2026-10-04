@@ -1,4 +1,23 @@
 {{ define "main" }}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+<script>
+  function initIdentity() {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initIdentity);
+  } else {
+    initIdentity();
+  }
+</script>
 <!-- Hero Section -->
 <section class="hero">
   <div class="hero-container">
