@@ -2,6 +2,7 @@
 title: "B.Sc. in Software Engineering"
 date: 2025-01-01T00:00:00Z
 draft: false
+weight: 30
 degree: "B.Sc. in Software Engineering"
 institution: "Daffodil International University"
 field: "Major in Cyber Security"

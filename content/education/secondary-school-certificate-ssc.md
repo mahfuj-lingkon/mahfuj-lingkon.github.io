@@ -2,6 +2,7 @@
 title: "Secondary School Certificate (SSC)"
 date: 2025-01-01T00:00:00Z
 draft: false
+weight: 10
 degree: "Secondary School Certificate (SSC)"
 institution: "Gaibandha Government Boys High School"
 field: "Science"

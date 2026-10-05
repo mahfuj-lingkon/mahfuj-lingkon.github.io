@@ -1,0 +1,59 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>{{ .Title }}</h1>
+  <p>{{ with .Params.role }}{{ . }}{{ else }}Project{{ end }}{{ with .Params.outcome }} · {{ . }}{{ end }}</p>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+
+    {{ with .Params.image }}
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="article-featured-image" style="margin-bottom: 32px; border-radius: 12px;">
+    {{ end }}
+
+    {{ with .Params.overview }}
+    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 32px;">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.technologies }}
+    <h2 style="font-size: 1.4rem; margin-bottom: 12px;">Technologies</h2>
+    <div class="tech" style="margin-bottom: 32px;">
+      {{ range . }}<span>{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+
+    {{ with .Params.approach }}
+    <h2 style="font-size: 1.4rem; margin-bottom: 12px;">Approach</h2>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 32px;">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.features }}
+    <h2 style="font-size: 1.4rem; margin-bottom: 12px;">Key Features</h2>
+    <ul style="color: var(--text-light); line-height: 1.9; padding-left: 20px; margin-bottom: 32px;">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+
+    {{ with .Params.outcome }}
+    <h2 style="font-size: 1.4rem; margin-bottom: 12px;">Outcome</h2>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 32px;">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.lessons }}
+    <h2 style="font-size: 1.4rem; margin-bottom: 12px;">Lessons Learned</h2>
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 32px;">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Content }}
+    <article style="color: var(--text-light); line-height: 1.8;">{{ . }}</article>
+    {{ end }}
+
+    <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; gap: 12px; flex-wrap: wrap;">
+      {{ with .Params.github_url }}
+      <a href="{{ . }}" class="btn btn-primary" target="_blank" rel="noopener">View on GitHub →</a>
+      {{ end }}
+      <a href="{{ "/projects/" | relURL }}" class="btn btn-secondary">← Back to Projects</a>
+    </div>
+  </div>
+</section>
+{{ end }}

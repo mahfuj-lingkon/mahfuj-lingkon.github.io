@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Params.provider }}{{ with .Params.year }} · {{ . }}{{ end }}</p>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    {{ with .Params.image }}
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="article-featured-image" style="margin-bottom: 32px; border-radius: 12px;">
+    {{ end }}
+
+    <div class="card" style="margin-bottom: 32px;">
+      <ul style="list-style: none; color: var(--text-light);">
+        {{ with .Params.provider }}
+        <li style="padding: 10px 0; border-bottom: 1px solid var(--border);"><strong>Provider:</strong> {{ . }}</li>
+        {{ end }}
+        {{ with .Params.year }}
+        <li style="padding: 10px 0;"><strong>Year:</strong> {{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+
+    {{ with .Params.description }}
+    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 32px;">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Content }}
+    <article style="color: var(--text-light); line-height: 1.8;">{{ . }}</article>
+    {{ end }}
+
+    <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);">
+      <a href="{{ "/education/" | relURL }}" class="btn btn-secondary">← Back to Education & Training</a>
+    </div>
+  </div>
+</section>
+{{ end }}

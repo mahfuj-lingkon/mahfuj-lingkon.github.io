@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.cert_date }}<p>{{ . }}</p>{{ end }}
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    {{ with .Params.image }}
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="article-featured-image" style="margin-bottom: 32px; border-radius: 12px;">
+    {{ end }}
+
+    {{ with .Params.description }}
+    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 32px;">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Content }}
+    <article style="color: var(--text-light); line-height: 1.8;">{{ . }}</article>
+    {{ end }}
+
+    <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);">
+      <a href="{{ "/achievements/" | relURL }}" class="btn btn-secondary">← Back to Achievements</a>
+    </div>
+  </div>
+</section>
+{{ end }}

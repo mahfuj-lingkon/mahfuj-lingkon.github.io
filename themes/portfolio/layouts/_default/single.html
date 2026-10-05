@@ -9,7 +9,15 @@
       {{ .Content }}
     </article>
     <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);">
-      <a href="{{ "/articles/" | relURL }}" class="btn btn-secondary">← Back to Articles</a>
+      {{ with .CurrentSection }}
+        {{ if ne .RelPermalink "/" }}
+        <a href="{{ .RelPermalink }}" class="btn btn-secondary">← Back to {{ .Title }}</a>
+        {{ else }}
+        <a href="{{ "/" | relURL }}" class="btn btn-secondary">← Back to Home</a>
+        {{ end }}
+      {{ else }}
+      <a href="{{ "/" | relURL }}" class="btn btn-secondary">← Back to Home</a>
+      {{ end }}
     </div>
   </div>
 </section>

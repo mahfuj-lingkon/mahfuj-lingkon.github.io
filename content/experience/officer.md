@@ -2,6 +2,7 @@
 title: "Officer"
 date: 2025-01-01T00:00:00Z
 draft: false
+weight: 40
 organization: "Eastern Bank PLC"
 location: "Dhaka, Bangladesh"
 start_date: "Jul 2025"

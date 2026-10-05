@@ -212,7 +212,7 @@
       <div class="card">
         <div class="card-icon">🏆</div>
         <h3>{{ .Title }}</h3>
-        <p>{{ .Params.issuer }} — {{ .Params.date }}</p>
+        <p>{{ .Params.issuer }}{{ with .Params.cert_date }} — {{ . }}{{ end }}</p>
       </div>
       {{ end }}
     </div>
@@ -234,7 +234,7 @@
       <div class="card">
         <div class="card-icon">🏆</div>
         <h3>{{ .Title }}</h3>
-        <p>{{ .Params.date }}</p>
+        <p>{{ .Params.cert_date }}</p>
       </div>
       {{ end }}
     </div>

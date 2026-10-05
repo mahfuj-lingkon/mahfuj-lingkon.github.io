@@ -1,0 +1,49 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Params.issuer }}{{ with .Params.cert_date }} · {{ . }}{{ end }}</p>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    <div class="grid grid-2" style="align-items: start; margin-bottom: 32px;">
+      <div>
+        {{ with .Params.badge }}
+        <img src="{{ . | relURL }}" alt="{{ $.Title }} badge" style="max-width: 160px; margin-bottom: 16px;">
+        {{ end }}
+        {{ with .Params.description }}
+        <p style="color: var(--text-light); line-height: 1.8;">{{ . }}</p>
+        {{ end }}
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom: 16px;">Credential Details</h3>
+        <ul style="list-style: none; color: var(--text-light);">
+          {{ with .Params.issuer }}
+          <li style="padding: 10px 0; border-bottom: 1px solid var(--border);"><strong>Issuer:</strong> {{ . }}</li>
+          {{ end }}
+          {{ with .Params.cert_date }}
+          <li style="padding: 10px 0; border-bottom: 1px solid var(--border);"><strong>Issued:</strong> {{ . }}</li>
+          {{ end }}
+          {{ with .Params.credential_id }}
+          <li style="padding: 10px 0; border-bottom: 1px solid var(--border);"><strong>Credential ID:</strong> {{ . }}</li>
+          {{ end }}
+          {{ with .Params.status }}
+          <li style="padding: 10px 0;"><strong>Status:</strong> {{ . | title }}</li>
+          {{ end }}
+        </ul>
+        {{ with .Params.verification_url }}
+        <a href="{{ . }}" class="btn btn-primary" style="margin-top: 16px;" target="_blank" rel="noopener">Verify Credential →</a>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ with .Content }}
+    <article style="color: var(--text-light); line-height: 1.8;">{{ . }}</article>
+    {{ end }}
+
+    <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);">
+      <a href="{{ "/certifications/" | relURL }}" class="btn btn-secondary">← Back to Certifications</a>
+    </div>
+  </div>
+</section>
+{{ end }}

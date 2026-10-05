@@ -2,6 +2,7 @@
 title: "Advanced Cybersecurity Engineer"
 date: 2025-01-01T00:00:00Z
 draft: false
+weight: 30
 organization: "ITCOM"
 location: "Metro Manila"
 start_date: "Jun 2024"

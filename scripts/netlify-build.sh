@@ -22,3 +22,10 @@ if [ -n "${DEPLOY_PRIME_URL:-}" ]; then
 else
   hugo --gc --minify
 fi
+
+# Fail the build if any page is missing its expected content.
+if command -v python3 >/dev/null 2>&1; then
+  python3 scripts/test_pages.py
+else
+  echo "python3 not found; skipping page content tests"
+fi

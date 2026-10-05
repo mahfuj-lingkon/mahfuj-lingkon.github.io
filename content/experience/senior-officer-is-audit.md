@@ -2,6 +2,7 @@
 title: "Senior Officer, IS Audit"
 date: 2025-01-01T00:00:00Z
 draft: false
+weight: 50
 organization: "City Bank PLC"
 location: "Dhaka, Bangladesh"
 start_date: "Jan 2026"

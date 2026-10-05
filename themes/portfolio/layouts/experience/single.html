@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="page-header">
+  <h1>{{ .Title }}</h1>
+  <p>
+    {{ .Params.organization }}{{ with .Params.location }}, {{ . }}{{ end }}
+    {{ with .Params.start_date }} · {{ . }}{{ with $.Params.end_date }} – {{ . }}{{ end }}{{ end }}
+  </p>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+
+    {{ with .Params.overview }}
+    <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.8; margin-bottom: 32px;">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.responsibilities }}
+    <h2 style="font-size: 1.5rem; margin-bottom: 16px;">Key Responsibilities</h2>
+    <ul style="color: var(--text-light); line-height: 1.9; padding-left: 20px; margin-bottom: 32px;">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+
+    {{ with .Params.achievements }}
+    <h2 style="font-size: 1.5rem; margin-bottom: 16px;">Achievements</h2>
+    <ul style="color: var(--text-light); line-height: 1.9; padding-left: 20px; margin-bottom: 32px;">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+
+    {{ with .Content }}
+    <article style="color: var(--text-light); line-height: 1.8;">{{ . }}</article>
+    {{ end }}
+
+    <div style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);">
+      <a href="{{ "/experience/" | relURL }}" class="btn btn-secondary">← Back to Experience</a>
+    </div>
+  </div>
+</section>
+{{ end }}

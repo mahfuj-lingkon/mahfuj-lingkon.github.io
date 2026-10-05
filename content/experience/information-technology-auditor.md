@@ -2,6 +2,7 @@
 title: "Information Technology Auditor"
 date: 2025-01-01T00:00:00Z
 draft: false
+weight: 10
 organization: "ACNABIN Chartered Accountants"
 location: "Dhaka, Bangladesh"
 start_date: "Mar 2022"

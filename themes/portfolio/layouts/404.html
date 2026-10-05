@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="section" style="text-align: center; padding: 96px 0;">
+  <div class="container">
+    <div class="not-found">
+      <h1 style="font-size: 5rem; margin-bottom: 16px;">404</h1>
+      <h2 style="font-size: 1.75rem; margin-bottom: 16px;">Page not found</h2>
+      <p style="color: var(--text-light); margin-bottom: 32px;">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="{{ "/" | relURL }}" class="btn btn-primary">Go Home</a>
+        <a href="{{ "/contact/" | relURL }}" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -2,6 +2,7 @@
 title: "Assistant Manager, IT Audit & Consultancy"
 date: 2025-01-01T00:00:00Z
 draft: false
+weight: 20
 organization: "ACNABIN Chartered Accountants"
 location: "Dhaka, Bangladesh"
 start_date: "Sep 2022"
