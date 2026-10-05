@@ -1,1 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Training on Md. Mahfuj Hasan — Information Systems Auditor</title><link>https://mahfuj-lingkon.github.io/training/</link><description>Recent content in Training on Md. Mahfuj Hasan — Information Systems Auditor</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://mahfuj-lingkon.github.io/training/index.xml" rel="self" type="application/rss+xml"/><item><title>Certified Ethical Hacker (CEH) Training</title><link>https://mahfuj-lingkon.github.io/training/certified-ethical-hacker-ceh-training/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://mahfuj-lingkon.github.io/training/certified-ethical-hacker-ceh-training/</guid><description>&lt;p&gt;Offensive security training covering ethical hacking methodologies and penetration testing.&lt;/p&gt;</description></item><item><title>CISA Preparation Course</title><link>https://mahfuj-lingkon.github.io/training/cisa-preparation-course/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://mahfuj-lingkon.github.io/training/cisa-preparation-course/</guid><description>&lt;p&gt;Preparation for the Certified Information Systems Auditor examination.&lt;/p&gt;</description></item><item><title>City Bank Foundation Training</title><link>https://mahfuj-lingkon.github.io/training/city-bank-foundation-training/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://mahfuj-lingkon.github.io/training/city-bank-foundation-training/</guid><description>&lt;p&gt;Comprehensive foundation training program covering banking operations, compliance, and technology systems.&lt;/p&gt;</description></item><item><title>Cybersecurity Fundamentals</title><link>https://mahfuj-lingkon.github.io/training/cybersecurity-fundamentals/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://mahfuj-lingkon.github.io/training/cybersecurity-fundamentals/</guid><description>&lt;p&gt;Foundational cybersecurity courses covering network security, threat analysis, and defensive techniques.&lt;/p&gt;</description></item><item><title>ISO/IEC 27001 Lead Auditor Training</title><link>https://mahfuj-lingkon.github.io/training/iso-iec-27001-lead-auditor-training/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://mahfuj-lingkon.github.io/training/iso-iec-27001-lead-auditor-training/</guid><description>&lt;p&gt;Comprehensive training on auditing information security management systems against ISO/IEC 27001 standards.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Training on Md. Mahfuj Hasan — Information Systems Auditor</title>
+		<link>https://mahfuj-lingkon.github.io/training/</link>
+		<description>Recent content in Training on Md. Mahfuj Hasan — Information Systems Auditor</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://mahfuj-lingkon.github.io/training/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Certified Ethical Hacker (CEH) Training</title>
+				<link>https://mahfuj-lingkon.github.io/training/certified-ethical-hacker-ceh-training/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://mahfuj-lingkon.github.io/training/certified-ethical-hacker-ceh-training/</guid>
+				<description>&lt;p&gt;Offensive security training covering ethical hacking methodologies and penetration testing.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>CISA Preparation Course</title>
+				<link>https://mahfuj-lingkon.github.io/training/cisa-preparation-course/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://mahfuj-lingkon.github.io/training/cisa-preparation-course/</guid>
+				<description>&lt;p&gt;Preparation for the Certified Information Systems Auditor examination.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>City Bank Foundation Training</title>
+				<link>https://mahfuj-lingkon.github.io/training/city-bank-foundation-training/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://mahfuj-lingkon.github.io/training/city-bank-foundation-training/</guid>
+				<description>&lt;p&gt;Comprehensive foundation training program covering banking operations, compliance, and technology systems.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Cybersecurity Fundamentals</title>
+				<link>https://mahfuj-lingkon.github.io/training/cybersecurity-fundamentals/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://mahfuj-lingkon.github.io/training/cybersecurity-fundamentals/</guid>
+				<description>&lt;p&gt;Foundational cybersecurity courses covering network security, threat analysis, and defensive techniques.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ISO/IEC 27001 Lead Auditor Training</title>
+				<link>https://mahfuj-lingkon.github.io/training/iso-iec-27001-lead-auditor-training/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://mahfuj-lingkon.github.io/training/iso-iec-27001-lead-auditor-training/</guid>
+				<description>&lt;p&gt;Comprehensive training on auditing information security management systems against ISO/IEC 27001 standards.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

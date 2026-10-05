@@ -72,6 +72,13 @@ img {
   display: block;
 }
 
+/* Prevent any child from forcing horizontal scroll on narrow viewports. */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 /* ============ Navigation ============ */
 .navbar {
   position: fixed;
@@ -1052,6 +1059,20 @@ main {
   .footer-container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .footer-brand,
+  .footer-copy {
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 }
 
